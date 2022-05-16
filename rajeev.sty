@@ -19,8 +19,7 @@
 \RequirePackage{dirtytalk}
 \RequirePackage{hyperref}
 
-
-
+% declare options
 
 \DeclareOption{sans}{
     \renewcommand{\familydefault}{\sfdefault}
@@ -40,7 +39,7 @@
     \setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
 }
 
-
+% declar defaults
 \ExecuteOptions{stdmargin, stdindent}
 \ProcessOptions\relax
 
@@ -59,12 +58,9 @@
 
 \renewcommand{\footrulewidth}{0.25pt}
 
-
-
 % mostly for ML papers and optimization in general
 \DeclareMathOperator*{\argmin}{arg min}
 \DeclareMathOperator*{\argmax}{arg max}
-
 
 %sets of numbers
 \newcommand{\CC}{\mathbb C}
@@ -84,7 +80,6 @@
 %real/complex operators
 \newcommand{\Real}{\mathfrak{Re}}
 \newcommand{\Img}{\mathfrak{Im}}
-
 
 %delimiter stuff
 \newcommand{\abs}[1]{\left\lvert#1 \right\rvert}
@@ -116,7 +111,6 @@
 % t = title
 
 % TODO: add these to TOC to make indexing easier
-
 
 \newcounter{problem}
 \newcommand{\problem}{
@@ -161,16 +155,11 @@
   \subsection*{\textcolor{olive}{Problem \theproblem.\alph{subproblema}\hspace{0.5em}}#1}
 }
 
-
-
 % linear algebra stuff
 \DeclareMathOperator{\spn}{span}
-
 \newcommand{\bm}[1]{\textbf{#1}}
-
 \DeclareMathOperator{\nul}{Null}
 \DeclareMathOperator{\ran}{Ran}
-
 
 % math classes in general
 
