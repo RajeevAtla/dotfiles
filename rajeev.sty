@@ -150,6 +150,14 @@
   \subsection*{\color{olive}Problem \theproblem.\thesubproblemn}
 }
 
+\newcounter{subsubproblemna}
+\counterwithin{subsubproblemna}{subproblemn}
+\newcommand{\subsubproblemna}{
+  \refstepcounter{subsubproblemna}
+  %\addcontentsline{toc}{subsection}{Problem \theproblem.\thesubproblemn.\thesubproblemna}
+  \subsection*{\color{blue}Problem \theproblem.\thesubproblemn.\thesubproblemna}
+}
+
 \newcommand{\subproblemnt}[1]{
   \refstepcounter{subproblemn}
   %\addcontentsline{toc}{subsection}{Problem \theproblem.\thesubproblemn: #1}
