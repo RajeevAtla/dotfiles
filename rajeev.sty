@@ -158,6 +158,14 @@
   \subsection*{\color{blue}Problem \thesubproblemn.\alph{subsubproblemna}}
 }
 
+\newcounter{subsubproblemnn}
+\counterwithin{subsubproblemnn}{subproblemn}
+\newcommand{\subsubproblemnn}{
+  \refstepcounter{subsubproblemnn}
+  %\addcontentsline{toc}{subsection}{Problem \thesubproblemn.\alph{subsubproblemnn}}
+  \subsection*{\color{blue}Problem \thesubsubproblemnn}
+}
+
 \newcommand{\subproblemnt}[1]{
   \refstepcounter{subproblemn}
   %\addcontentsline{toc}{subsection}{Problem \theproblem.\thesubproblemn: #1}
